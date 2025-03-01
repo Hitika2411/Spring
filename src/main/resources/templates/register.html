@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head th:replace ="fragments/head.html:: head"></head>
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+      <header th:replace="fragments/header.html :: header"></header>
+
+      <section class="book_section layout_padding">
+        <div class="container">
+          <div class="heading_container">
+            <h2>
+              Register Yourself
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_container">
+                <form action="#"
+                    th:action="${/register}",
+                    th:object="${account}"
+                >
+                  <div>
+                    <input type="text" class="form-control" placeholder="Enter Your Name" />
+                  </div>
+                  <div>
+                    <input type="email" class="form-control" placeholder="Enter Your Email" />
+                  </div>
+                  <input type="text" class="form-control" placeholder="Enter Your password" />
+                </div>
+                <div>
+                </div>
+                <div>
+                  <div class="btn_box">
+                    <button>
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+  
+  <footer th:replace ="fragments/footer.html:: footer"><footer>
+ 
+
+</body>
+
+</html>
